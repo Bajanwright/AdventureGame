@@ -13,16 +13,14 @@ while user_input != 'yes' and user_input != 'no':
     user_input = input()
 
     if user_input == "yes":
-        print('''You decide to run out of the lab. Your co-worker reaches for you and
-        his arm suddenly falls. Unsure if what to do next you''')
+        print('''Well then, let's get started. Do you want to go check out Chicita's room or go to the river of and start 
+            looking for her there''')
         user_input_2 = ''
-        while user_input_2 != 'call police' and user_input_2 != 'look back':
-            print("Enter 'call police' or 'look back'.")
+        while user_input_2 != 'room' and user_input_2 != 'river':
+            print("Enter 'room' or 'river'.")
             user_input_2 = input()
-            if user_input_2 == "call police":
-                print('''You walk away from the lab and take out your phone. You call
-                the police and explain the situation. The police and ambulance quickly
-                arrive and enter the room. They also collapse. You...''')
+            if user_input_2 == "room":
+                print('''You go to her bedroom and find a letter from her best friend who lives in Quack City.''')
                 user_input_3 = ''
                 while user_input_3 != 'collect gas sample' and user_input_3 != 'run':
                     print ("Enter 'collect gas sample' or 'run'")
@@ -64,15 +62,11 @@ while user_input != 'yes' and user_input != 'no':
                                             print("Enter 'get in your car' or 'tell the police'.")
                                             user_input_6 = input()
 
-            elif user_input_2 == "look back":
-                print ('''You see your co-worker is no longer where you left him. Terrified
-                and confused, you look at the door an see that you left it wide open. A group of
-                human-looking monsters run after you, catch you and eat you. THE END''')
+            elif user_input_2 == "river":
+                print ('''Once you get to the river, you'll see bear footprints, a piece of cloth and some hair.''')
                 break
         # Continue code to finish story.
 
-    elif user_input == "risk fainting":
-        print('''You choose to risk fainting to save your co-worker. You run into the room.
-        Your co-worker is no longer there. You turn around and see him. He opens his mouth
-        and snarls. You faint. THE END''') # Update to match your story.
+    elif user_input == "no":
+        print('Well then, your lose, go home.') # Update to match your story.
         break
